@@ -1,0 +1,62 @@
+[
+    {
+        "mark": "Audi",
+        "model": "A4",
+        "year": "2015",
+        "delivery": "21.05.2021-28.02.2022"
+    },
+    {
+        "mark": "Audi",
+        "model": "A4",
+        "year": "2016",
+        "delivery": "01.05.2021-21.03.2022"
+    },
+    {
+        "mark": "Audi",
+        "model": "A5",
+        "year": "2015",
+        "delivery": "21.05.2021-28.06.2021"
+    },
+    {
+        "mark": "ВАЗ",
+        "model": "2101",
+        "year": "1970",
+        "delivery": "21.05.2021-28.02.2022"
+    },
+    {
+        "mark": "BMW",
+        "model": "218i F44",
+        "year": "2020",
+        "delivery": "21.05.2021-11.12.2022"
+    },
+    {
+        "mark": "Mercedes-Benz",
+        "model": "GL",
+        "year": "2016",
+        "delivery": "16.05.2021-08.10.2022"
+    },
+    {
+        "mark": "Mercedes-Benz",
+        "model": "CLA",
+        "year": "2021",
+        "delivery": "01.05.2021-25.09.2022"
+    },
+    {
+        "mark": "Mercedes-Benz",
+        "model": "CLA",
+        "year": "2018",
+        "delivery": "15.05.2021-14.11.2022"
+    },
+    {
+        "mark": "Mercedes-Benz",
+        "model": "GLS",
+        "year": "2021",
+        "delivery": "28.05.2021-08.08.2022"
+    },
+    {
+        "mark": "Bentley",
+        "model": "Continental",
+        "year": "2016",
+        "delivery": "11.08.2021-11.08.2022"
+    }
+]

@@ -1,0 +1,593 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-transform: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@-webkit-keyframes rectangleOne {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-800px, -500px);
+            transform: translate(-800px, -500px);
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes rectangleOne {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-800px, -500px);
+            transform: translate(-800px, -500px);
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rectangleTwo {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-800px, 500px);
+            transform: translate(-800px, 500px);
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes rectangleTwo {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-800px, 500px);
+            transform: translate(-800px, 500px);
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes rectangleThree {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(800px, -500px);
+            transform: translate(800px, -500px);
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes rectangleThree {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(800px, -500px);
+            transform: translate(800px, -500px);
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes rectangleFour {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(800px, 500px);
+            transform: translate(800px, 500px);
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes rectangleFour {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(800px, 500px);
+            transform: translate(800px, 500px);
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes showCircle {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+  }
+}
+
+@keyframes showCircle {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+  }
+}
+
+@-webkit-keyframes rotateCircle {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+    pointer-events: none;
+  }
+  90% {
+    pointer-events: none;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+    pointer-events: auto;
+  }
+}
+
+@keyframes rotateCircle {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+    pointer-events: none;
+  }
+  90% {
+    pointer-events: none;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+    pointer-events: auto;
+  }
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.rectangles {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rectangles.hide {
+  display: none;
+}
+
+.rectangle__up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rectangle__up.hide {
+  display: none;
+}
+
+.rectangle__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rectangle__down.hide {
+  display: none;
+}
+
+.rectangle {
+  width: 125px;
+  height: 125px;
+  background-color: #fff;
+}
+
+.one {
+  -webkit-animation: rectangleOne 5s linear 1s forwards;
+          animation: rectangleOne 5s linear 1s forwards;
+}
+
+.two {
+  -webkit-animation: rectangleTwo 5s linear 1s forwards;
+          animation: rectangleTwo 5s linear 1s forwards;
+}
+
+.three {
+  -webkit-animation: rectangleThree 5s linear 1s forwards;
+          animation: rectangleThree 5s linear 1s forwards;
+}
+
+.four {
+  -webkit-animation: rectangleFour 5s linear 1s forwards;
+          animation: rectangleFour 5s linear 1s forwards;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: showCircle 2s linear 4.5s forwards, rotateCircle 2s linear 5.5s forwards;
+          animation: showCircle 2s linear 4.5s forwards, rotateCircle 2s linear 5.5s forwards;
+}
+
+.circle__text {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.circle.hide {
+  display: none;
+}
+
+.select__car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.select__car.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+select {
+  width: 350px;
+  height: 50px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+select:last-child {
+  margin: 10px 0 0 0;
+}
+
+select:first-child {
+  margin: 0 0 10px 0;
+}
+
+select:disabled {
+  background: grey;
+  color: #000;
+}
+
+option {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rental__date {
+  width: 350px;
+  height: 50px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#rental__deliver {
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 0;
+  padding: 15px;
+  opacity: 0;
+  visibility: hidden;
+  cursor: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#rental__deliver.active__btn {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#rental__deliver:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.car__info {
+  color: #fff;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.restart__btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+  select {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  option {
+    font-size: 20px;
+  }
+  .rental__date {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  #rental__deliver {
+    font-size: 20px;
+    margin: 25px 0;
+    padding: 10px;
+  }
+  .car__info {
+    font-size: 25px;
+  }
+  .restart__btn {
+    font-size: 25px;
+    margin: 25px 0;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 649px) {
+  select {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  option {
+    font-size: 20px;
+  }
+  .rental__date {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  #rental__deliver {
+    font-size: 20px;
+    margin: 25px 0;
+    padding: 10px;
+  }
+  .car__info {
+    font-size: 25px;
+  }
+  .restart__btn {
+    font-size: 15px;
+    margin: 25px 0;
+    padding: 7px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  select {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  option {
+    font-size: 20px;
+  }
+  .rental__date {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  #rental__deliver {
+    font-size: 20px;
+    margin: 25px 0;
+    padding: 10px;
+  }
+  .car__info {
+    font-size: 20px;
+  }
+  .restart__btn {
+    font-size: 15px;
+    margin: 25px 0;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,84 @@
+@media (min-width: 650px) and (max-width: 767px) {
+  select {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  option {
+    font-size: 20px;
+  }
+  .rental__date {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  #rental__deliver {
+    font-size: 20px;
+    margin: 25px 0;
+    padding: 10px;
+  }
+  .car__info {
+    font-size: 25px;
+  }
+  .restart__btn {
+    font-size: 25px;
+    margin: 25px 0;
+    padding: 15px;
+  }
+}
+@media (min-width: 481px) and (max-width: 649px) {
+  select {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  option {
+    font-size: 20px;
+  }
+  .rental__date {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  #rental__deliver {
+    font-size: 20px;
+    margin: 25px 0;
+    padding: 10px;
+  }
+  .car__info {
+    font-size: 25px;
+  }
+  .restart__btn {
+    font-size: 15px;
+    margin: 25px 0;
+    padding: 7px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  select {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  option {
+    font-size: 20px;
+  }
+  .rental__date {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+  }
+  #rental__deliver {
+    font-size: 20px;
+    margin: 25px 0;
+    padding: 10px;
+  }
+  .car__info {
+    font-size: 20px;
+  }
+  .restart__btn {
+    font-size: 15px;
+    margin: 25px 0;
+    padding: 5px;
+  }
+}
