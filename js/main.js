@@ -85,7 +85,7 @@ window.addEventListener("DOMContentLoaded", () => {
     mark.appendChild(el);
   }
 
-  selectMark.addEventListener("change", function () {
+  selectMark.addEventListener("change", () => {
     let model = document.getElementById("model");
     while (model.firstChild) {
       model.removeChild(model.firstChild);
@@ -136,7 +136,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let selectModel = document.getElementById("model");
 
-  selectModel.addEventListener("change", function () {
+  selectModel.addEventListener("change", () => {
     let year = document.getElementById("year");
     while (year.firstChild) {
       year.removeChild(year.firstChild);
@@ -178,7 +178,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   let selectYear = document.getElementById("year");
-  selectYear.addEventListener("change", function () {
+  selectYear.addEventListener("change", () => {
     let selectYear = document.getElementById("year");
     let rentalBtn = document.getElementById("rental__deliver");
     let selectedValueYear = selectYear.options[selectYear.selectedIndex].value;
@@ -194,7 +194,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   let rentalBtn = document.getElementById("rental__deliver");
-  rentalBtn.addEventListener("click", function () {
+  rentalBtn.addEventListener("click", () => {
     let divSelectCar = document.querySelector(".select__car");
     while (divSelectCar.querySelector(".rental__date")) {
       divSelectCar.removeChild(divSelectCar.querySelector(".rental__date"));
@@ -236,7 +236,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function close(classDate) {
     let carDate = document.querySelector(classDate);
 
-    carDate.onchange = function () {
+    carDate.onchange = () => {
       let divSelectCar = document.querySelector(".select__car");
       let body = document.body;
 
@@ -264,7 +264,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function btnRestart(classBtn) {
     let btn = document.querySelector(classBtn);
 
-    btn.addEventListener("click", function () {
+    btn.addEventListener("click", () => {
       window.location.reload(true);
     });
   }
